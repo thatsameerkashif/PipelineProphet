@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+httpx
+python-dotenv
+ibmcloudant
+ibm-watsonx-ai
+pydantic
+python-multipart

@@ -1,0 +1,11 @@
+pipeline:
+  name: demo-app-pipeline
+  stages:
+    - name: install
+      run: pip install -r requirements.txt
+    - name: test
+      run: pytest tests/ -v
+    - name: lint
+      run: flake8 src/ --max-line-length=88
+    - name: build
+      run: docker build -t demo-app:latest .
