@@ -1,0 +1,27 @@
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ── Stats bar ──────────────────────────────────────────────────────────── */
+.stats-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #f7f8fa;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.stats-pill {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1f2328;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}

@@ -1,0 +1,164 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background: #f7f8fa;
+  color: #1f2328;
+  margin: 0;
+}
+
+/* ── Card ── */
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+/* ── Header bar ── */
+.app-header {
+  background: #1f2328;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.watsonx-badge {
+  background: #3b82d4;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  letter-spacing: 0.2px;
+}
+
+/* ── Risk badges ── */
+.badge-high {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fca5a5;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.badge-medium {
+  background: #fffbeb;
+  color: #d97706;
+  border: 1px solid #fcd34d;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.badge-low {
+  background: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #86efac;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* ── Progress bar ── */
+.progress-bar-track {
+  background: #f3f4f6;
+  border-radius: 4px;
+  height: 6px;
+  width: 100%;
+  overflow: hidden;
+  margin: 4px 0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.progress-high { background: #dc2626; }
+.progress-medium { background: #d97706; }
+.progress-low { background: #16a34a; }
+
+/* ── Skeleton animation ── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.skeleton {
+  background: #e5e7eb;
+  border-radius: 4px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* ── Stage row ── */
+.stage-row {
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.stage-row:last-child {
+  border-bottom: none;
+}
+
+.stage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+/* ── Build list table ── */
+.builds-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.builds-table th {
+  text-align: left;
+  color: #57606a;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.builds-table td {
+  padding: 8px;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
+}
+
+.builds-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ── IBM footer ── */
+.ibm-footer {
+  text-align: center;
+  font-size: 11px;
+  color: #57606a;
+  margin-top: 32px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+  padding-bottom: 24px;
+}
